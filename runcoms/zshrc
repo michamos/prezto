@@ -12,9 +12,34 @@ fi
 
 # Customize to your needs...
 
-#Add $HOME/bin to path
-path=($HOME/bin $path)
-
 # Enable Homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+
+# Key mappings for bépo
+bindkey -M viins "^@" vi-cmd-mode
+bindkey -M vicmd é vi-forward-word
+bindkey -M vicmd É vi-forward-blank-word
+bindkey -M vicmd c vi-backward-char
+bindkey -M vicmd C vi-beginning-of-line
+bindkey -M vicmd r vi-forward-char
+bindkey -M vicmd R vi-end-of-line
+bindkey -M vicmd t down-line-or-history
+bindkey -M vicmd s up-line-or-history
+bindkey -M vicmd T vi-join
+bindkey -M vicmd j vi-find-next-char-skip
+bindkey -M vicmd J vi-find-prev-char-skip
+bindkey -M vicmd f vi-find-next-char
+bindkey -M vicmd F vi-find-prev-char
+bindkey -M vicmd l vi-change
+bindkey -M vicmd L vi-change-eol
+bindkey -M vicmd h vi-replace-chars
+bindkey -M vicmd H vi-replace
+bindkey -M vicmd k vi-substitute
+bindkey -M vicmd K vi-change-whole-line
+bindkey -M vicmd « vi-unindent
+bindkey -M vicmd » vi-indent
+bindkey -M vicmd , vi-repeat-find
+bindkey -M vicmd ';' vi-rev-repeat-find
+bindkey -M vicmd Y vi-yank-eol
+bindkey -M vicmd U redo
