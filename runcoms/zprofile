@@ -63,6 +63,16 @@ if (( $+commands[lesspipe.sh] )); then
 fi
 
 #
+# Homeshick
+# 
+
+# Enable Homeshick
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# Add completion path
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+
+#
 # Temporary Files
 #
 
