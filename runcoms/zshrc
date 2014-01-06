@@ -39,3 +39,4 @@ bindkey -M vicmd , vi-repeat-find
 bindkey -M vicmd ';' vi-rev-repeat-find
 bindkey -M vicmd Y vi-yank-eol
 bindkey -M vicmd U redo
+bindkey -M vicmd S run-help
