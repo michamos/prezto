@@ -30,7 +30,7 @@ else
 fi
 
 # Return if requirements are not found.
-if (( ! $+commands[python] && ! $+commands[pyenv] )); then
+if (( ! $+commands[python] )); then
   return 1
 fi
 
